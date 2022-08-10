@@ -1,10 +1,13 @@
 import './App.scss';
 import { Routes, Route } from "react-router-dom"
+import Layout from './components/Layout/Layout';
 
 function App() {
   return (
     <div className="App">
-      <Routes
+      <Routes>
+        <Route path='/' element={<Layout />}/>
+      </Routes>
     </div>
   );
 }
