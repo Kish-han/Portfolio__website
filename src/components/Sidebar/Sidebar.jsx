@@ -4,7 +4,7 @@ import { Link, NavLink } from 'react-router-dom'
 // import Coloured from '../../assets/images/Coloured.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEnvelope, faHome, faUser, faCableCar, faX, faBars } from '@fortawesome/free-solid-svg-icons'
-import { faGithub, faGithubAlt, faGithubSquare, faInstagram, faLinkedin, faLinkedinIn } from '@fortawesome/free-brands-svg-icons'
+import { faGithub,faInstagram, faLinkedin} from '@fortawesome/free-brands-svg-icons'
 
 
 const Sidebar = () => {
@@ -56,7 +56,7 @@ const Sidebar = () => {
                     {navlinks('home-link', '/', faHome)}
                     {navlinks('about-link', '/about', faUser)}
                     {navlinks('project-link', '/project', faCableCar)}
-                    {navlinks('contact-link', '/contact', faUser)}
+                    {navlinks('contact-link', '/contact', faEnvelope)}
                 </nav>
                 <ul>
                     {linksicon(faLinkedin, "https://www.linkedin.com/in/kishan-r-3015a9246/")}

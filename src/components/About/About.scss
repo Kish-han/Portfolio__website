@@ -74,3 +74,11 @@
         transform: rotateX(90deg);
     }
 }
+
+@media only screen and (max-width: 600px){
+    .stage-cube-cont{
+        width: 100%;
+        top: 45%;
+        bottom: 0%;
+    }
+}

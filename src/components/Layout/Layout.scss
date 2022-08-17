@@ -17,7 +17,7 @@
     color: var(--primarycolour);
     opacity: 0.6;
     position: absolute;
-    // bottom: 0;
+    bottom: 0;
     left: 120px;
     font-size: 18px;
     font-family: 'La Belle Aurore', cursive;
@@ -43,7 +43,8 @@
     animation-delay: 1s;
 }
 
-.about-page {
+.about-page,
+.contact-page {
     .text-zone {
         position: absolute;
         left: 10%;
@@ -74,7 +75,8 @@
                 opacity: 0.6;
                 line-height: 18px;
             }
-            &::after{
+
+            &::after {
                 content: '<h1 />';
                 font-family: 'La Belle Aurore', cursive;
                 font-size: 18px;
@@ -86,30 +88,32 @@
                 opacity: 0.6;
             }
         }
-        p{
+
+        p {
             font-size: 13px;
             color: #fff;
             font-family: sans-serif;
             font-weight: 300;
             min-width: fit-content;
-            animation: pulse 1s;
+            animation: pulse 1s 1s;
+            animation-fill-mode: forwards;
 
-            &:nth-of-type(1){
-                animation-delay: 1.2s ;
+            &:nth-of-type(1) {
+                animation-delay: 1.2s;
             }
 
-            &:nth-of-type(2){
-                animation-delay: 1.3s ;
+            &:nth-of-type(2) {
+                animation-delay: 1.3s;
             }
 
-            &:nth-of-type(3){
-                animation-delay: 1.4s ;
+            &:nth-of-type(3) {
+                animation-delay: 1.4s;
             }
         }
     }
 
-    .text-animate-hover{
-        &:hover{
+    .text-animate-hover {
+        &:hover {
             color: #fff;
         }
     }
@@ -118,5 +122,13 @@
 @media only screen and (max-width: 600px) {
     .tags {
         left: 60px;
+    }
+
+    .about-page,
+    .contact-page {
+        .text-zone {
+            top: 30%;
+            width: 80%;           
+        }
     }
 }
