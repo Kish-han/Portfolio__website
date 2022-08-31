@@ -4,26 +4,28 @@ import Coloured from '../../images/Coloured.png'
 
 const Home = () => {
     return (
-        <section className='overflow-hidden'>
-            <div className=" relative flex wrapper h-[92vh] w-full md:w-[95.5vw] md:h-[100vh] ">
-                <div className="leftwrap text-white h-full flex flex-col items-center justify-center md:w-[50%] px-4 ">
-                    <div className="text-6xl z-[100] space-y-3 ">
-                        <h1>Hi,</h1>
-                        <h1>I'm Kishan</h1>
-                        <h1>Web developer</h1>
-                        <p className='text-xl mt-5'>Frontend developer</p>
-                    </div>
-                    <div className="">
+        <section className='overflow-hidden h-[92vh] w-[100vw] md:w-[90vw] md:[100vh]'>
+            <div className="wrapper bg-secondarycolor w-full h-full md:flex">
+                <div className="leftwrap w-full h-full flex justify-center items-center md:w-[50%] md:h-full">
+                    <div className="text-5xl md:text-7xl text-white z-50">
+                        <h1 className='gap-y-2'>
+                            <p>Hi,</p>
+                            <p>I'm Kishan</p>
+                            <p>web developer</p>
+                            <p className='text-[15px] mt-4'>Frontend Developer</p>
+                        </h1>
+                        <button className="text-xl font-semibold border border-primarycolor text-primarycolor rounded-tl-lg rounded-br-lg px-4 py-2 mt-7 hover:bg-primarycolor hover:text-secondarycolor transition transform duration-200 hover:scale-105 active:scale-95">
+                            Contact me
+                        </button>
                     </div>
                 </div>
-                <div className="rightwrap absolute top-[20%] left-9 z-[1] md:relative md:top-[10%]  ">
-                    <div className="imgholder opacity-60 rotate-[25deg] md:opacity-100 ">
-                        <img src={Coloured} alt="" className='w-[400px] md:w-[600px] ' />
+                <div className="rightwrap absolute top-[20%] md:top-0 md:relative md:w-[50%] md:h-[100vh] md:flex md:justify-center md:items-center">
+                    <div className=" w-[350px] md:w-[600px] opacity-50 md:opacity-100">
+                        <img src={Coloured} alt="" className='w-full' />
                     </div>
                 </div>
             </div>
         </section>
     )
 }
-// absolute top-[20%] left-9 z-[1]
 export default Home
