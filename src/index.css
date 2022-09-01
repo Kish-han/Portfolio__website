@@ -11,9 +11,13 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 } */
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 
 @layer components {
   .active {

@@ -4,6 +4,10 @@ module.exports = {
     "./src/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
+    fontFamily: {
+      headingtext: ['Lobster', "cursive"],
+      Raleway: ['Raleway', "sans-serif"],
+    },
     extend: {
       colors: {
         'primarycolor': '#39FF13',

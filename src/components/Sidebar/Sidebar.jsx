@@ -16,7 +16,7 @@ const Sidebar = () => {
                 <div className="logocontainer w-[50px] p-1">
                     <img src={Coloured} alt="" className="logo w-full h-full object-contain" />
                 </div>
-                <div className={`navlinks absolute -bottom-10 flex justify-evenly text-xl transition-all ease-in-out duration-700 ${mobnav ? "right-0 left-0" : "right-[750px] -left-[350px]"}  md:relative md:flex-col md:bottom-[15px] md:right-0 md:left-0 md:space-y-8 text-[#ababab] bg-slate-800 py-3`}>
+                <div className={`navlinks z-[1000px] absolute -bottom-10 flex justify-evenly text-xl transition-all ease-in-out duration-700 ${mobnav ? "right-0 left-0" : "right-[750px] -left-[350px]"}  md:relative md:flex-col md:bottom-[15px] md:right-0 md:left-0 md:space-y-8 text-[#ababab] bg-slate-800 py-3`} onClick={()=>setMobnav(false)}>
                     <NavLink to={'/'} activeClassName="active animate-bounce" className='text-2xl cursor-pointer'>
                         <MdHome className='text-[26px]' />
                     </NavLink>
