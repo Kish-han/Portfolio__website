@@ -19,7 +19,7 @@ function App() {
       {/* <div className='flex flex-col md:flex-row'> */}
       {/* <Sidebar /> */}
       <div className="bg-secondarycolor ">
-        <AnimatePresence exitBeforeEnter initial={false} >
+        <AnimatePresence exitBeforeEnter >
           <Routes location={location} key={location.pathname}>
             <Route path="/" element={<Layout />}>
               <Route index element={<Home />} />

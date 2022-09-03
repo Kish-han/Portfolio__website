@@ -8,7 +8,7 @@ const Layout = () => {
             <div className="sticky top-0 left-0 z-[100]">
                 <Sidebar />
             </div>
-            <div className="layout w-full h-full z-[80]">
+            <div className="layout w-full h-full z-[80]  overflow-hidden">
                 <Outlet />
             </div>
         </div>
