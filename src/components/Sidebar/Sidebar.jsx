@@ -23,12 +23,12 @@ const Sidebar = () => {
                     <NavLink to={'/about'} activeClassName="active" className='about-link cursor-pointer'>
                         <FaUserTie  />
                     </NavLink>
-                    <NavLink to={'/projects'} activeClassName="active" className='project-link cursor-pointer'>
+{/*                     <NavLink to={'/projects'} activeClassName="active" className='project-link cursor-pointer'>
                         <ImBooks  />
                     </NavLink>
                     <NavLink to={'/contact'} activeClassName="active" className='contact-link cursor-pointer'>
                         <FaEnvelope  />
-                    </NavLink>
+                    </NavLink> */}
                 </div>
                 <div className="contactlinks hidden md:inline-flex flex-col space-y-5 text-[#ababab]">
                     <Link to='/'>
